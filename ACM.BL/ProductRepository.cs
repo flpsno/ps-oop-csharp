@@ -16,16 +16,28 @@ namespace ACM.BL
             if (productId == 2)
             {
                 product.ProductName = "Sunflowers";
-                product.ProductDescription = "Assorted Size";
+                product.ProductDescription = "Assorted Size Set of 4 Bright Yellow Mirrow";
                 product.CurrentPrice = 15.98M;
             }
 
             return product;
         }
 
-        public bool Save()
+        public bool Save(Product product)
         {
-            return true;
+            var success = true;
+
+            if (product.HasChanges && product.IsValid)
+            {
+                if (product.IsNew)
+                {
+                }
+                else
+                {
+
+                }
+            }
+            return success;
         }
     }
 }
