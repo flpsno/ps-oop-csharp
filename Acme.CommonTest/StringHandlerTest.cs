@@ -15,7 +15,8 @@ namespace Acme.CommonTest
             var expected = "Sonic Screwdrive";
 
             //-- Act
-            var actual = StringHandler.InsertSpaces(source);
+            var actual = source.InsertSpaces();
+            //var actual = StringHandler.InsertSpaces(source);
 
             //-- Asser
             Assert.AreEqual(expected, actual);
@@ -29,7 +30,8 @@ namespace Acme.CommonTest
             var expected = "Sonic Screwdrive";
 
             //-- Act
-            var actual = StringHandler.InsertSpaces(source);
+            var actual = source.InsertSpaces();
+            //var actual = StringHandler.InsertSpaces(source);
 
             //-- Asser
             Assert.AreEqual(expected, actual);

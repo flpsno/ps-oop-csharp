@@ -30,7 +30,8 @@ namespace ACM.BL
         public String ProductName
         {
             get {
-                return StringHandler.InsertSpaces(_ProductName);
+                //return StringHandler.InsertSpaces(_ProductName);
+                return _ProductName.InsertSpaces();
             }
             set { _ProductName = value; }
         }
