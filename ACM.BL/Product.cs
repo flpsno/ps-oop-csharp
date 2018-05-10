@@ -24,7 +24,16 @@ namespace ACM.BL
 
         public string ProductDescription { get; set; }
 
-        public string ProductName { get; set; }
+        private String _ProductName;
+
+        public String ProductName
+        {
+            get {
+                return _ProductName;
+            }
+            set { _ProductName = value; }
+        }
+
 
         public override bool Validate()
         {
